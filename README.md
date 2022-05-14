@@ -11,9 +11,8 @@ Developers are often tasked with creating interfaces that make it easy for non-d
 
 ## Installation
 
-![Employee Tracker](assets/employee-tracker.gif)
+![Employee Tracker](assets/www_screencapture_com_2022-5-14_13_47.gif)
 
 ### Reach me here:
 
-[TrentynP](https://github.com/TrentynP)  
-
+[TrentynP](https://github.com/TrentynP)
