@@ -31,6 +31,41 @@ function firstPrompt() {
           "Add Employee",
           "Remove Employees",
           "Update Employee Role",
+          "Remove Role"
           "Add Role",
           "End"]
       })
+      .then(function ({ task }) {
+        switch (task) {
+          case "View Employees":
+            viewEmployee();
+            break;
+          case "View Employees by Department":
+            viewEmployeeByDepartment();
+            break;
+          case "View Employees by Manager":
+            viewEmployeeByManager();
+            break;
+          case "Add Employee":
+            addEmployee();
+            break;
+          case "Remove Employees":
+            removeEmployees();
+            break;
+          case "Update Employee Role":
+            updateEmployeeRole();
+            break;
+          case "Add Role":
+            addRole();
+            break;
+         case "Remove Role":
+            removeRole();
+            break;
+          case "End":
+            connection.end();
+            break;
+        }
+      });
+  }
+  
+  
