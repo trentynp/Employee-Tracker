@@ -1,11 +1,10 @@
 const mysql = require("mysql");
 const inquirer = require("inquirer");
 require("console.table");
-const sql = require("./sql");
 
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 3306,
+  port: 5000,
   user: "root",
   password: "~Ma009090",
   database: "employeesDB"
@@ -106,10 +105,6 @@ function firstPrompt() {
     connection.query(query, function (err, res) {
       if (err) throw err;
   
-     //const departmentChoices = res.map(({ id, name }) => ({
-     //name: `${id} ${name}`,
-     //value: id
-     //}));
   
       const departmentChoices = res.map(data => ({
         value: data.id, name: data.name
@@ -382,8 +377,6 @@ function firstPrompt() {
   
     connection.query(query, function (err, res) {
       if (err) throw err;
-  
-       // (callbackfn: (value: T, index: number, array: readonly T[]) => U, thisArg?: any)
       const departmentChoices = res.map(({ id, name }) => ({
         value: id, name: `${id} ${name}`
       }));
