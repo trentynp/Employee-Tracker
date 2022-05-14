@@ -4,9 +4,9 @@ require("console.table");
 
 var connection = mysql.createConnection({
   host: "localhost",
-  port: 5000,
+  port: 3306,
   user: "root",
-  password: "~Ma009090",
+  password: "Tp608412",
   database: "employeesDB"
 });
 
