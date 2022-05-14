@@ -193,12 +193,7 @@ function firstPrompt() {
           message: "What is the employee's role?",
           choices: roleChoices
         },
-        {
-          name: "manager_id",
-          type: "list",
-          message: "What is the employee's manager_id?",
-          choices: manager
-        }
+    
       ])
       .then(function (answer) {
         console.log(answer);
