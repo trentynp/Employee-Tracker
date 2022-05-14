@@ -23,3 +23,5 @@ Developers are often tasked with creating interfaces that make it easy for non-d
   - **last_name** - VARCHAR(30) to hold employee last name
   - **role_id** - INT to hold reference to role employee has
   - **manager_id** - INT to hold reference to another employee that manager of the current employee. This field may be null if the employee has no manager
+
+![Employee Tracker](assets/employee-tracker.gif)
